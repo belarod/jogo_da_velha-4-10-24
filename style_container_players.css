@@ -1,0 +1,7 @@
+#container__players{
+    display: flex;
+    justify-content: space-around;
+
+    width: 70vw;
+    margin: auto;
+}
