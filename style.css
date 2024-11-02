@@ -1,16 +1,123 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
 
+    font-family: "Chicle", serif;;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    max-width: 600px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#container__players {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    margin: 1em auto;
+}
+
+.input__name {
+    background-color: antiquewhite;
+    border: 0;
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+    padding: 0.5em;
+    text-align: center;
     font-size: 1em;
 }
 
-header, footer{
+#versus {
+    font-size: 3em;
+    color: #333;
+}
+
+#start {
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1em;
+}
+
+#start:hover {
+    background-color: #45a049;
+}
+
+#container__game {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container__game__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.game__button--empty {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-/* aqui fazer header e footer */
+.game__button--empty:hover {
+    background-color: #f0f0f0;
+}
+
+#aqui {
+    font-size: 1.5em;
+    color: #45a049;
+}
+
+#aqui:visited{    
+    color: #45a049;
+}
