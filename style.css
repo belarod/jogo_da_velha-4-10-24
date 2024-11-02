@@ -121,3 +121,7 @@ footer p {
 #aqui:visited{    
     color: #45a049;
 }
+
+#result{
+    padding-top: 1em;
+}
